@@ -1,5 +1,5 @@
 import {test as it} from '@playwright/test'
-import {DatePicker} from '../../page_objecct/DatePicker'
+import {DatePicker} from '../../page_object/DatePicker'
  
 it.describe('DATA PICKER', () =>{
     it('working with data picker', async ({page}) =>{
