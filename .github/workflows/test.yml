@@ -18,3 +18,9 @@ jobs:
               run: npm i --force
             - name: Install playwright 
               run: npx playwright install --with-deps
+            - name: install Allure reporta
+              run:
+                npm install -D allure-commandline --force
+                npx allure generate ./allure-results --clean
+            - name: Run playwright tests
+              run: npm run lambdaTest
